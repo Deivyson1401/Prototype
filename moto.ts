@@ -14,7 +14,7 @@ class moto extends vehicle {
 
     represent(): void {
         for (let i = 0; i < this.list.length; i++) {
-            console.log(`\nExemplo de moto ${i+1}\n\nmodelo: ${this.list[i].modelo}\ncor: ${this.list[i].cor}\nNúmero de rodas: ${this.list[i].numeroRodas}\nTipo do motor: ${this.list[i].numero_Portas}`) 
+            console.log(`\nExemplo de moto ${i+1}\n\nmodelo: ${this.list[i].modelo}\ncor: ${this.list[i].cor}\nNúmero de rodas: ${this.list[i].numeroRodas}\nTipo do motor: ${this.list[i].tipo_motor}`) 
         }        
     }
 }
@@ -27,7 +27,8 @@ class addmoto_list {
     constructor(modelo:string, cor: string, numeroRodas:number, tipo_motor: string){
         this.modelo = modelo
         this.cor = cor
-        this.nu
+        this.numeroRodas = numeroRodas
+        this.tipo_motor = tipo_motor
     }
 }
 
